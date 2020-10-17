@@ -1,10 +1,7 @@
 require 'test_helper'
 
 class MicropostTest < ActiveSupport::TestCase
-<<<<<<< HEAD
-  
-=======
->>>>>>> user-microposts
+
   def setup
     @user = users(:michael)
     @micropost = @user.microposts.build(content: "Lorem ipsum")
@@ -18,11 +15,7 @@ class MicropostTest < ActiveSupport::TestCase
     @micropost.user_id = nil
     assert_not @micropost.valid?
   end
-<<<<<<< HEAD
-  
-=======
 
->>>>>>> user-microposts
   test "content should be present" do
     @micropost.content = "   "
     assert_not @micropost.valid?

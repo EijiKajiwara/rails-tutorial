@@ -1,32 +1,16 @@
-<<<<<<< HEAD
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
-orange:
-  content: "I just ate an orange!"
-  created_at: <%= 10.minutes.ago %>
-=======
 orange:
   content: "I just ate an orange!"
   created_at: <%= 10.minutes.ago %>
   user: michael
->>>>>>> user-microposts
 
 tau_manifesto:
   content: "Check out the @tauday site by @mhartl: http://tauday.com"
   created_at: <%= 3.years.ago %>
-<<<<<<< HEAD
-=======
   user: michael
->>>>>>> user-microposts
 
 cat_video:
   content: "Sad cats are sad: http://youtu.be/PKffm2uI4dk"
   created_at: <%= 2.hours.ago %>
-<<<<<<< HEAD
-
-most_recent:
-  content: "Writing a short test"
-  created_at: <%= Time.zone.now %>
-=======
   user: michael
 
 most_recent:
@@ -60,4 +44,3 @@ micropost_<%= n %>:
   created_at: <%= 42.days.ago %>
   user: michael
 <% end %>
->>>>>>> user-microposts

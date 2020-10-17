@@ -1,10 +1,6 @@
 class Micropost < ApplicationRecord
   belongs_to :user
   default_scope -> { order(created_at: :desc) }
-<<<<<<< HEAD
-  validates :user_id, presence: true
-  validates :content, presence: true, length: { maximum: 140 }
-=======
   mount_uploader :picture, PictureUploader
   validates :user_id, presence: true
   validates :content, presence: true, length: { maximum: 140 }
@@ -18,5 +14,4 @@ class Micropost < ApplicationRecord
         errors.add(:picture, "should be less than 5MB")
       end
     end
->>>>>>> user-microposts
 end
