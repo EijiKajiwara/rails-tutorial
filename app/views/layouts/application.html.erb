@@ -4,6 +4,7 @@
   <body>
     <%= render 'layouts/partial/header' %>
     <div class="container">
+      <!--< react_component('Counter') %>-->
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>
       <% end %>
